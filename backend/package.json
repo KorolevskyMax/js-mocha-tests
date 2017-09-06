@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Max Korolevsky",
   "license": "ISC",
+  "scripts": {
+    "start": "node server.js",
+    "start:detach": "node server.js &"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "~1.17.1",

@@ -1,5 +1,5 @@
 const faker = require('faker');
-const api = require('../../frontend/business_logic');
+const api = require('../../frontend/business_logic/api');
 
 generateUser = (passwordMatch = true, withDate = false) => {
     let pass = faker.name.findName();

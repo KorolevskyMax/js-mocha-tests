@@ -1,5 +1,12 @@
 const request = require('request');
-const config = require('config').get("mockServer");
+const config = {
+    "port": 5050,
+    "apiBase": "http://localhost:",
+    "routes": {
+        "clients": "/clients",
+        "client": "/clients/{user_id}"
+    }
+};
 
 createClient = function (user_id, email, cb) {
     request.post(config.apiBase + config.port + config.routes.clients,

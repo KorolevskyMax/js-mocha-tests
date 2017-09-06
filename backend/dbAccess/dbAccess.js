@@ -1,7 +1,8 @@
-let config = require('config');
 let mysql = require('mysql');
-
-let options = config.get("dbOptions");
+let options = {
+        "host": "localhost",
+        "user": "ubuntu"
+    };
 
 connection = mysql.createConnection(options);
 connection.connect(function (err) {

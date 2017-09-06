@@ -3,7 +3,7 @@ var signupPage = require('../pageobjects/signup.page');
 var loginPage = require('../pageobjects/login.page');
 var dataGen = require('../utils/dataGenerator');
 
-let incorrectEmails = {
+var incorrectEmails = {
     emails: [
         "plainaddress",
         "#@%^%#$@#$@#.com",

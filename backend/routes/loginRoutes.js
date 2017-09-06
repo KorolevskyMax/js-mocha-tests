@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const dbConnection = require('../dbAccess/dbAccess');
 const mockApi = require('../mockServerAPI/api');
+dbConnection.eraseDB();
 
 validateRegister = function (values) {
     var errors = {};

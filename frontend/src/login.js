@@ -2,7 +2,7 @@ import React from 'react'
 import update from 'immutability-helper'
 import style from './style'
 import {validated} from 'react-custom-validation'
-import api from './../business_logic'
+import api from './../business_logic/api'
 import {RaisedButton} from "material-ui";
 
 class App extends React.Component {

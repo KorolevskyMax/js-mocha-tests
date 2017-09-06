@@ -1,8 +1,7 @@
 {
   "dbOptions": {
     "host": "localhost",
-    "user": "root",
-    "password": "3120490K"
+    "user": "ubuntu"
   },
   "mockServer": {
     "port": 5050,

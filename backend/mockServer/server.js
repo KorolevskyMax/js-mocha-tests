@@ -1,5 +1,4 @@
 const jsonServer = require('json-server');
-const config = require('config');
 
 exports.runMockServer = () => {
     const mockServer = jsonServer.create();
@@ -13,8 +12,8 @@ exports.runMockServer = () => {
     mockServer.use(middlewares);
     mockServer.use(mockRouter);
     mockServer.listen(
-        config.get("mockServer").port,
-        () => console.log("Mock Server is listening on http://localhost:" + config.get("mockServer").port + "/"));
+        5050,
+        () => console.log("Mock Server is listening on http://localhost:5050/"));
     return mockServer;
 };
 

@@ -1,11 +1,10 @@
 import React from 'react'
-import Promise from 'bluebird'
 import update from 'immutability-helper'
 import validator from 'validator'
 import {validated} from 'react-custom-validation'
 import {RaisedButton} from "material-ui";
 import style from './style'
-import api from './../business_logic'
+import api from './../business_logic/api'
 
 class App extends React.Component {
     state = {

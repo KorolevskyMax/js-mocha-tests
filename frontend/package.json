@@ -5,8 +5,8 @@
   "description": "",
   "license": "MIT",
   "scripts": {
-    "eslint": "eslint .",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-detach": "node server.js &"
   },
   "dependencies": {
     "axios": "^0.16.2",

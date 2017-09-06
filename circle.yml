@@ -1,3 +1,64 @@
+## Customize the test machine
+timezone:
+  America/Los_Angeles # Set the timezone
+
 machine:
   node:
     version: 6.10.0
+
+services:
+    - mysql
+
+# Override /etc/hosts
+#hosts:
+#  circlehost: 127.0.0.1
+
+# Add some environment variables
+environment:
+    DB_HOST: 127.0.0.1
+    DB_URL: 127.0.0.1
+    DB_NAME: signup
+    DB_USER: ubuntu
+
+## Customize database setup
+  database:
+    override:
+      - mysql -u ubuntu -e "create database signup"
+
+## Customize checkout
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
+
+## Customize dependencies
+dependencies:
+  pre:
+    - cd js-mocha-tests
+    - cd backend && npm install && cd ..
+    - cd frontend && npm install && cd ..
+    - cd tests && npm install && cd ..
+
+  override:
+    - bundle install:
+        timeout: 600
+
+## Customize test commands
+test:
+  override:
+    - cd backend && npm run start-detach && cd ..
+    - cd frontend && npm run start-detach && cd ..
+    - SLEEP 10 && cd tests && npm test
+
+## Customize deployment commands
+#deployment:
+#  staging:
+#    branch: master
+#    heroku:
+#      appname: foo-bar-123
+
+## Custom notifications
+#notify:
+#  webhooks:
+#     A list of hashes representing hooks. Only the url field is supported.
+#    - url: https://someurl.com/hooks/circle
