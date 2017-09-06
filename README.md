@@ -16,7 +16,7 @@ opened in your browser
 
 ## APP structure
 * **frontend/** - directory with frontend.
-* **backend/** - directory with frontend.
+* **backend/** - directory with backend application: api, 3rdPartyService, dbAccess module.
 * **tests/** - directory with tests.
 
 ## Tests structure
