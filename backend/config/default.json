@@ -1,0 +1,19 @@
+{
+  "dbOptions": {
+    "host": "localhost",
+    "user": "root",
+    "password": "3120490K"
+  },
+  "mockServer": {
+    "port": 5050,
+    "apiBase": "http://localhost:",
+    "routes": {
+      "clients": "/clients",
+      "client": "/clients/{user_id}"
+    }
+  },
+  "apiServer": {
+    "apiBase": "http://localhost:",
+    "port": 5000
+  }
+}
