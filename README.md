@@ -1,4 +1,4 @@
-# WebDriverIO Demo
+# JS Mocha Demo Project
 
 A demo project that demonstrates how to use WebDriverJs and how to run it using CircleCI.
 
