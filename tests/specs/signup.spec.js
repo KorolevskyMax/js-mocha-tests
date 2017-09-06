@@ -37,7 +37,6 @@ var incorrectEmails = {
 };
 describe('Signup page.', () => {
     var user = dataGen.generateUser();
-    dbAccess.eraseDB();
 
     it('User can signup with correct data', () => {
         signupPage.open();

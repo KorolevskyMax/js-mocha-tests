@@ -31,7 +31,9 @@ build/Release
 node_modules/
 jspm_packages/
 package-lock.json
-
+tests/allure-results/
+tests/errorShots/
+tests/allure-report/
 # Typescript v1 declaration files
 typings/
 

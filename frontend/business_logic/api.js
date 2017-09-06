@@ -5,11 +5,11 @@ const endpoints = {
     register: 'register'
 };
 
-login = function(email, password, cb) {
+exports.login = function(email, password, cb) {
     var payload = {
         "email": email,
         "password": password
-    }
+    };
     var resp = {};
     axios.post(apiBaseUrl + endpoints.login, payload)
         .then(function (response) {
@@ -43,7 +43,7 @@ login = function(email, password, cb) {
         });
 };
 
-register = function(email, password, retypePassword, cb) {
+exports.register = function(email, password, retypePassword, cb) {
     var payload = {
         "email": email,
         "password": password,
@@ -74,9 +74,4 @@ register = function(email, password, retypePassword, cb) {
             };
             return cb(resp);
         });
-};
-
-module.exports = {
-    login,
-    register
 };

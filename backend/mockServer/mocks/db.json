@@ -1,4 +1,49 @@
 {
   "clients": [
+    {
+      "user_id": 1,
+      "email": "Eleanore50@gmail.com",
+      "id": 1
+    },
+    {
+      "user_id": 2,
+      "email": "Barney_Stark79@yahoo.com",
+      "id": 2
+    },
+    {
+      "user_id": 3,
+      "email": "qwe@qwe.qwe",
+      "id": 3
+    },
+    {
+      "user_id": 4,
+      "email": "Golden_Howe99@yahoo.com",
+      "id": 4
+    },
+    {
+      "user_id": 5,
+      "email": "Crystel_Kulas@yahoo.com",
+      "id": 5
+    },
+    {
+      "user_id": 6,
+      "email": "Lamont.Gibson96@yahoo.com",
+      "id": 6
+    },
+    {
+      "user_id": 1,
+      "email": "Thalia.Bechtelar@gmail.com",
+      "id": 7
+    },
+    {
+      "user_id": 3,
+      "email": "Emmet.Wolf@gmail.com",
+      "id": 8
+    },
+    {
+      "user_id": 1,
+      "email": "Emmet.Wolf@gmail.com",
+      "id": 9
+    }
   ]
 }

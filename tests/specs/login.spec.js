@@ -1,9 +1,11 @@
 var expect = require('chai').expect;
 var loginPage = require('../pageobjects/login.page');
 var dataGen = require('../utils/dataGenerator');
+var dbAccess = require('../../backend/dbAccess/dbAccess');
 
 describe('Login page.', () => {
     var user = dataGen.generateUser();
+    dbAccess.eraseDB();
     dataGen.registerUser(user);
 
     it('Form has correct header', () => {
