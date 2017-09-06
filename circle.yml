@@ -29,7 +29,7 @@ checkout:
 ## Customize dependencies
 dependencies:
   pre:
-    - cd js-mocha-tests
+    - pwd
     - cd backend && npm install && cd ..
     - cd frontend && npm install && cd ..
     - cd tests && npm install && cd ..
