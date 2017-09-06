@@ -11,7 +11,7 @@ login = function(email, password, cb) {
         "password": password
     }
     var resp = {};
-    axios.post(apiBaseUrl + endpoints.login, payload);
+    axios.post(apiBaseUrl + endpoints.login, payload)
         .then(function (response) {
             if (response.data.code === 200) {
                 resp = {
@@ -79,4 +79,4 @@ register = function(email, password, retypePassword, cb) {
 module.exports = {
     login,
     register
-}
+};

@@ -2,7 +2,7 @@
 
 A demo project that demonstrates how to use WebDriverJs and how to run it using CircleCI.
 
-Build status: ![Build Status](https://circleci.com/gh/alisterscott/webdriver-js-demo.svg?style=shield)
+Build status: ![Build Status](https://circleci.com/gh/KorolevskyMax/js-mocha-tests.svg?style=shield)
 
 ## Setup
 
