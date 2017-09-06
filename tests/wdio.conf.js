@@ -26,7 +26,7 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'phantomjs'
     }],
     //
     // ===================

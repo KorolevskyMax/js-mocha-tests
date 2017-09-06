@@ -20,11 +20,6 @@ environment:
     DB_NAME: signup
     DB_USER: ubuntu
 
-## Customize database setup
-  database:
-    override:
-      - mysql -u ubuntu -e "create database signup"
-
 ## Customize checkout
 checkout:
   post:
@@ -38,6 +33,11 @@ dependencies:
     - cd backend && npm install && cd ..
     - cd frontend && npm install && cd ..
     - cd tests && npm install && cd ..
+
+## Customize database setup
+  database:
+    override:
+      - mysql -u ubuntu -e "create database signup"
 
   override:
     - bundle install:

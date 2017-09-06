@@ -9,7 +9,7 @@ Build status: ![Build Status](https://circleci.com/gh/alisterscott/webdriver-js-
 1. Install [node.js version 8+](https://nodejs.org/). This project uses modern Javascript features, that will not work in older versions.
 2. Clone this repository `git clone git+git@github.com:KorolevskyMax/js-mocha-tests.git && cd js-mocha-tests`
 3. Install dependencies for each project backend/ frontend/ tests/ `npm install`
-4. Run fronend & backend via `npm start` in corresponding dirs
+4. Run frontend & backend via `npm start` in corresponding dirs
 5. Run tests via `npm test`. It will start Selenium server and perform some tests
 6. Run `npm run report` to build `html` report from results and it will be
 opened in your browser
