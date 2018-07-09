@@ -9,6 +9,8 @@ var http_client = Object.create(null, {
     server_statistic: { value: () => Promise.resolve(chai.request(app).get('/')) },
 
     // /msg	// this is the primary interface. It accepts a simple GET with query parameter message or ping.
+    msg_get: { value: (request) => Promise.resolve(chai.request(app).get('/msg?message=' + request).send(request))},
+
     // These serve the same functions as a POST to /msg
     // POST to /msg takes a JSON body of the form:
     // {
@@ -19,7 +21,7 @@ var http_client = Object.create(null, {
     //     timeZone:    //the client timezome e.g. America/New_York
     //     offset:      //hours offset from GMT
     // }
-    msg: { value: (request) => Promise.resolve(chai.request(app).post('/msg').send(request))},
+    msg_post: { value: (request) => Promise.resolve(chai.request(app).post('/msg').send(request))},
 
     // /ping	// maps to /msg
     ping: { value: () => Promise.resolve(chai.request(app).get('/ping'))},
